@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +11,6 @@
       --text: #121212;
       --secondary: #666872;
       --card: #ffffff;
-      --line: #e6e7ec;
     }
 
     * {
@@ -126,79 +123,160 @@
 
     <p class="intro">
       This Privacy Policy explains how Cooksie handles information when you
-      use the app to save, organize, import, back up, and restore recipes.
+      save, organize, import, back up, and restore recipes.
     </p>
 
     <section class="card">
-      <h2>Information You Provide</h2>
+      <h2>Information Stored in Cooksie</h2>
       <p>
-        Cooksie allows you to create and store recipes, including recipe names,
-        ingredients, instructions, favorite selections, and other recipe content
-        you choose to save.
+        Cooksie allows you to create and save recipes, including recipe names,
+        ingredients, instructions, selected photos, and favorite selections.
       </p>
       <p>
-        When you use an import feature, you may provide content such as a recipe
-        webpage URL, pasted text, or a selected image containing recipe information.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Recipe Import Processing</h2>
-      <p>
-        When you choose to import a recipe from a URL, pasted text, or photo,
-        the content you submit may be transmitted to external processing services
-        used by Cooksie to identify and organize recipe details such as the recipe
-        title, ingredients, and instructions.
-      </p>
-      <p>
-        This processing occurs only when you choose to use an import feature.
-        You can also enter recipes manually without submitting import content for
-        this type of processing.
+        Saved recipes and photos added manually or through editing are stored
+        locally on your device as part of your recipe collection.
       </p>
     </section>
 
     <section class="card">
-      <h2>Recipe Storage and Backup</h2>
+      <h2>Recipe Import Features</h2>
       <p>
-        Saved recipes are stored in the app on your device.
+        Cooksie offers several ways to import recipe content. The information
+        processed depends on the feature you choose to use.
       </p>
-      <p>
-        Cooksie also allows you to create a JSON backup file of your recipe
-        collection. When you choose to save a backup through the iOS Files sheet,
-        you decide where that file is stored, which may include iCloud Drive or
-        another storage location available on your device.
-      </p>
-      <p>
-        Restoring from a backup requires you to select a previously saved backup file.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Data We May Process</h2>
-      <p>Depending on the features you use, Cooksie may process:</p>
       <ul>
-        <li>Recipe URLs you choose to import</li>
-        <li>Recipe text you paste into the app</li>
-        <li>Recipe images you select for import</li>
-        <li>Recipe information extracted from submitted content</li>
-        <li>Backup files you choose to export or restore</li>
+        <li>
+          <strong>Paste Text:</strong> Recipe text you paste into the app is
+          sent to OpenAI for processing so that Cooksie can identify and organize
+          recipe details such as titles, ingredients, and instructions.
+        </li>
+        <li>
+          <strong>Import from URL:</strong> When you provide a recipe webpage URL,
+          Cooksie requests the webpage content from that website. If local parsing
+          is not sufficient to extract the recipe, extracted webpage text may be
+          sent to OpenAI for recipe processing.
+        </li>
+        <li>
+          <strong>Choose Photo:</strong> Photos selected for recipe import are
+          processed on-device using Apple's Vision text-recognition technology.
+          The photo itself is not sent to OpenAI. Text recognized from the photo
+          is sent to OpenAI for recipe processing.
+        </li>
+        <li>
+          <strong>Manual Entry:</strong> Recipes created manually do not require
+          AI processing as part of normal app operation.
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>External Services</h2>
+      <p>
+        Cooksie uses or may interact with the following external services when
+        you choose certain features:
+      </p>
+      <ul>
+        <li>
+          <strong>OpenAI API:</strong> Receives pasted recipe text, extracted
+          webpage text when AI parsing is needed, and OCR-extracted text from
+          selected recipe photos in order to structure recipe content.
+        </li>
+        <li>
+          <strong>Recipe Website Hosts:</strong> Receive a webpage request when
+          you import a recipe from a URL.
+        </li>
+        <li>
+          <strong>Remote Image Hosts:</strong> May receive a request when Cooksie
+          displays an externally hosted image associated with an imported recipe.
+        </li>
+        <li>
+          <strong>iCloud Drive:</strong> Receives a recipe backup file only if
+          you choose to export a backup and select iCloud Drive as its location.
+        </li>
       </ul>
     </section>
 
     <section class="card">
       <h2>How Information Is Used</h2>
       <p>
-        Information is used to provide the app's functions, including importing,
-        formatting, displaying, saving, backing up, and restoring your recipes.
+        Recipe content submitted for import is used to provide the requested
+        app functionality, including identifying recipe titles, ingredients,
+        and instructions and presenting them in an organized format.
+      </p>
+      <p>
+        Cooksie does not use recipe content for advertising or analytics.
+        The app does not include advertising SDKs or analytics SDKs.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>OpenAI Data Handling</h2>
+      <p>
+        Cooksie sends certain recipe text to the OpenAI API only when needed
+        for an import feature you choose to use.
+      </p>
+      <p>
+        According to OpenAI's API data controls, data submitted through the API
+        is not used to train or improve OpenAI models by default unless the API
+        organization explicitly opts in. OpenAI may retain API inputs and outputs
+        for a limited period for abuse monitoring and service operation, subject
+        to OpenAI's applicable data controls and retention policies.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Photos</h2>
+      <p>
+        When you import a recipe from a photo, the image is analyzed on your
+        device using Apple Vision OCR to recognize text. The original selected
+        image is not sent to OpenAI by Cooksie's normal import process.
+      </p>
+      <p>
+        Photos that you add to recipes manually or while editing are compressed
+        and stored locally in the app's recipe data.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Backups and iCloud Drive</h2>
+      <p>
+        Cooksie allows you to export your recipe collection as a JSON backup file.
+        You choose whether to create a backup and where to save it through the
+        iOS Files sheet. If you select iCloud Drive, the backup file is stored in
+        your iCloud Drive account and is subject to Apple's applicable policies
+        and your iCloud settings.
+      </p>
+      <p>
+        Cooksie can restore recipe data only when you choose a backup file for
+        restoration.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Retention and Deletion</h2>
+      <p>
+        Recipes and locally stored recipe photos remain on your device until you
+        delete them from the app or remove the app and its locally stored data.
+      </p>
+      <p>
+        Exported backup files remain in the storage location you selected until
+        you delete them there.
+      </p>
+      <p>
+        Content sent to external services is handled according to the retention
+        practices of those services. OpenAI API content may be retained for abuse
+        monitoring and service operation as described in OpenAI's API data controls.
       </p>
     </section>
 
     <section class="card">
       <h2>Your Choices</h2>
       <ul>
-        <li>You can create recipes manually instead of using import features.</li>
-        <li>You can remove saved recipes from the app.</li>
-        <li>You control whether and where you export a backup file.</li>
+        <li>You may create recipes manually without using AI-assisted import.</li>
+        <li>You may choose whether to import content from text, URLs, or photos.</li>
+        <li>You may delete saved recipes from Cooksie.</li>
+        <li>You control whether and where you export backup files.</li>
+        <li>You may delete exported backup files from the storage location where you saved them.</li>
       </ul>
     </section>
 
@@ -213,9 +291,8 @@
     <section class="card">
       <h2>Changes to This Policy</h2>
       <p>
-        This Privacy Policy may be updated when Cooksie's features or data
-        practices change. The effective date at the top of this page will be
-        updated when changes are made.
+        This Privacy Policy may be updated if Cooksie's features or data
+        practices change. Any updated version will show a revised effective date.
       </p>
     </section>
 
